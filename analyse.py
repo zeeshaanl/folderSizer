@@ -1,8 +1,8 @@
 import os
 import sys
 
-# Run using python3 index.py path [resultsToShow]
-# Example python3 index.py /users/bobjones/Files 20
+# Run using python3 analyse.py path [resultsToShow]
+# Example python3 analyse.py /users/bobjones/Files 20
 # Default resultsToShow=30
 
 def calculate_directory_size(directory):
