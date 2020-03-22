@@ -26,7 +26,7 @@ def sort_folders(folderDictionary):
 
 def display_sorted_folders(sortedListOfTupples, resultsToShow):
     for key,value in enumerate(sortedListOfTupples):
-        if(key<resultsToShow):
+        if key < resultsToShow:
             print(value)
 
 def main(basePath, resultsToShow):
@@ -45,7 +45,7 @@ def main(basePath, resultsToShow):
 
 
 basePath = sys.argv[1]
-resultsToShow = sys.argv[2] if len(sys.argv) >= 3 else 30
+resultsToShow = int(sys.argv[2]) if len(sys.argv) >= 3 else 30
 
 main(basePath, resultsToShow)
 
